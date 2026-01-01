@@ -14,11 +14,13 @@
 
 ### temperature:
 - It control the randomness of the output
-- lower value - more deterministic
-- higher value - more randomness
+- Temperature value can be set between 0-2
+- If temperature is 0, model will always give same answer to the given input
+- if we keep increasing the temperature, even to 0.2 answer, llm will give
+creative output.
 - for maths, code, facts - lower temperature is preferred
 - for general qa - mid range
-- for story telling, jokes - 0.9 - 1.2
+- for story telling, jokes - 0.9 - 1
 - for more randomness, use temperature > 1
 - chat_model = ChatOpenAI(model="gpt-4", temperature=1.7)
 
