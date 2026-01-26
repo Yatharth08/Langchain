@@ -1,14 +1,13 @@
-### LLM:
+### Type 1: LLM
 - General pupose model used for any NLP task.
 - Pure text-in → text-out models
 - They predict the next token given previous text
 - No built-in understanding of roles, turns, or conversation state
 
 
-### Chat models:
-- Specialized for conversational task
-- Built on top of language models.
-- Fine-tuned for conversation
+### Type 2: Chat models
+- Purpose: Specialized for conversational task (Conversational AI)
+- Built on top of language models, fine-tuned llm models for conversation
 - Understand roles, turns, and dialogue flow
 - Take text as input and return ChatMessage object
 
@@ -36,3 +35,17 @@ creative output.
     - Require high resources - GPU
     - Setup is complex
     - Lack of RLHF - Most of open source model are not fine tuned with human feedback
+
+
+### Type 3: Embedding model
+- Embedding models convert text into numerical vectors (arrays of numbers) that capture the semantic meaning of the text.
+    - Purpose: Semantic representation
+    - Understanding meaning
+    - Compressing text into vectors
+
+### Note:
+- There are other types of models in langchain as well like:
+    - Reranker Models: For improving retrieval accuracy.
+    - Multimodal Models: For text + image/audio.
+    - Tool-enabled Models: Chat models only but with tool calling for agents.
+    
