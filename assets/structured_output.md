@@ -25,3 +25,10 @@ A practice of having LLM to return response in well structured format(for eg JSO
 - It ensure data is structured and type-safe.
 - For production pipelines.
 - syntax: summary: Annotated[str, Field(description="A brief summary of the product review.")]
+
+## Output Parser
+### PydanticOutputParser
+It enforce schema validation when processing LLM response.
+- Ensure that LLM response follow a well defined structure.
+- Presnet in langchain_core library
+- from langchain_core.output_parser import PydanticOutputParser
